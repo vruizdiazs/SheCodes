@@ -79,19 +79,20 @@
             let name = prompt("What's your name?");
             let age = prompt ("How old are you?"); 
 
-            if (age < 18  || gender === "male"){
-                alert("You can't join SheCodes");
+            if (age <=  18) {
+                h1.innerHTML = "Thank you" + name + ", we'll be in touch!";
+            } else {
+                h1.innerHTML = "Sorry" + name + "! Yo cannot join SheCodes";  
             }
             
             let h1 = document. querySelector("h1");
             h1.innerHTML = "Thank you" + name + ", we'll be in touch!";
-        
-      
+
         }
 
         let contactButton = document.querySelector("button");
-
         contactUsButton.addEventeListener("click", contactUs);
+        
     </script>
   </body>
 </html>
